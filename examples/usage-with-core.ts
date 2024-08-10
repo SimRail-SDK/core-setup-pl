@@ -8,7 +8,7 @@ const en1 = sdk.server(Server.Code.EN1);
 const en2 = sdk.server("en2");
 
 const będzin     = sdk.station("en1", Station.Code.B);
-// const düsseldorf = sdk.station("en1", "Dü"); // <-- Fails because Berlin doesn't exist.
+// const düsseldorf = sdk.station("en1", "Dü"); // <-- Fails because Düsseldorf doesn't exist.
 const katowice   = sdk.station("en1", "KO");
 
 const train4144 = sdk.train("en1", "4144");

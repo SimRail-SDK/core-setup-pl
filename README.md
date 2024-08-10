@@ -2,7 +2,17 @@
 
 This is the *Core SDK Setup* for the Polish map in SimRail.
 
-This module is meant to be used with the [*Core SDK*](https://github.com/simrail-sdk/core "View on GitHub") ([`@simrail-sdk/core`](https://github.com/simrail-sdk/core "View on GitHub"))
+This module is meant to be used with the [*Core SDK*](https://github.com/simrail-sdk/core "View on GitHub") ([`@simrail-sdk/core`](https://github.com/simrail-sdk/core "View on GitHub")).
+
+You only need to install this if you:
+- Use TypeScript and want strict typing for:
+    - Line numbers.
+    - Server codes.
+    - Station codes.
+    - Train numbers.
+- Use JavaScript and want to obtain:
+    - Server codes.
+    - Station codes.
 
 If you are looking for the *SDK Setup* for Poland, ~~check out~~ *wait for* the module [`@simrail-sdk/sdk-setup-pl`](https://github.com/simrail-sdk/sdk-setup-pl "View on GitHub").
 
@@ -75,7 +85,7 @@ const en1 = sdk.server(Server.Code.EN1);
 const en2 = sdk.server("en2");
 
 const będzin     = sdk.station("en1", Station.Code.B);
-const düsseldorf = sdk.station("en1", "Dü"); // <-- Fails because Berlin doesn't exist.
+const düsseldorf = sdk.station("en1", "Dü"); // <-- Fails because Düsseldorf doesn't exist.
 const katowice   = sdk.station("en1", "KO");
 
 const train4144 = sdk.train("en1", "4144");
@@ -84,6 +94,7 @@ const train4145 = sdk.train("en1", "4145"); // <-- Fails because 4145 doesn't ex
 // Obtaining a list of server/station codes:
 const serverCodes  = Object.values(Server.Code);
 const stationCodes = Object.values(Station.Code);
+
 ```
 <br/>
 <br/>
@@ -2122,7 +2133,7 @@ Package name: `@simrail-sdk/core-setup-pl`
 
 Author: [Niek van Bennekom](https://github.com/niekvb "View GitHub profile")
 
-Version: `0.1.0`
+Version: `0.1.1`
 
 Repository: [`github:simrail-sdk/core-setup-pl` (origin)](https://github.com/simrail-sdk/core-setup-pl.git "View on github")
 
@@ -2183,9 +2194,9 @@ Dependency tree:
 
 | File type | Number of files | Lines with code | Lines with comments | Blank lines |
 | --------- | --------------- | --------------- | ------------------- | ----------- |
-| Markdown | 1 | 553 | 0 | 121 |
+| Markdown | 3 | 1703 | 0 | 1214 |
 | TypeScript | 2 | 294 | 75 | 10 |
 | JavaScript | 2 | 162 | 2 | 0 |
 | JSON | 3 | 92 | 0 | 1 |
-| YAML | 1 | 31 | 0 | 2 |
-| **All (total)** | **9** | **1132** | **77** | **134** |
+| YAML | 1 | 40 | 0 | 3 |
+| **All (total)** | **11** | **2291** | **77** | **1228** |
